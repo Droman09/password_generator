@@ -10,11 +10,12 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   
   // Prompt to select lenght from 8 - 128
-  var lenght = window.prompt("How many characters would you like your password to be?\n(select between 8 and 128.)");
+  var lenght = window.prompt("How many characters would you like your password to be?\n(Select between 8 and 128.)");
   // Cancel select 
   if (!lenght) { 
-    return};
-  // If lenght requirements are not 
+    return
+  };
+  // If lenght requirements are not met
   while(!lenght || lenght < 8 ||lenght > 128){
     lenght = window.prompt("You must choose a number between 8 and 128.")
   };
